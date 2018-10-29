@@ -1,0 +1,15 @@
+.border {
+    border: black 1px solid;
+    padding: 20px 10px;
+    margin: 10px;
+}
+
+.button {
+    margin: 5px 15px;
+    display: inline-block;
+}
+
+.container {
+    font-family: monospace;
+    font-size: large;
+}

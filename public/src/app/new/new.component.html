@@ -1,0 +1,29 @@
+<div class="font">
+
+<h3>Register a restaurant</h3>
+
+<div class="border">
+
+    <div *ngIf="error_msgs">
+        <p class="button font" *ngFor="let m of error_msgs">Error: {{m}}</p>
+    
+    </div>
+
+    <form (submit) = "createRestaurant()">
+        <div class="form-group">
+        <p class="button">Name:</p>
+        <input class="button form-control" type = "text" name="newRestaurant.name" [(ngModel)]="newRestaurant.name"/>
+        </div>
+        <div class="form-group">
+        <p class="button">Cuisine:</p>
+        <input class="button form-control" type = "text" name="newRestaurant.cuisine" [(ngModel)]="newRestaurant.cuisine"/>
+        </div>
+        <button class="button btn btn-primary" type="submit">Register</button> 
+      </form>
+
+        <button class="button btn btn-secondary" (click)="goHome()">Cancel</button>  
+
+</div>
+
+
+</div>

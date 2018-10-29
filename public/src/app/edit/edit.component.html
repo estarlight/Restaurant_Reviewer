@@ -1,0 +1,28 @@
+<div class="container">
+
+<h3>Edit a restaurant</h3>
+
+<div class="border">
+
+    <div *ngIf="error_msgs">
+        <p class="button" *ngFor="let m of error_msgs">Error: {{m}}</p>
+    
+    </div>
+
+    <form (submit) = "editRestaurant()">
+        <div class="form-group">
+        <p class="button">Name:</p>
+        <input class="button form-control" type = "text" name="restaurant.name" [(ngModel)]="restaurant.name"/>
+        </div>
+
+        <div class="form-group">
+        <p class="button">Cuisine:</p>
+        <input class="button form-control" type = "text" name="restaurant.cuisine" [(ngModel)]="restaurant.cuisine"/>
+        </div>
+        <button class="button btn btn-primary" type="submit">Submit</button>
+      </form>
+        <button class="button btn btn-secondary" (click)="goHome()">Cancel</button>  
+
+</div>
+
+</div>
