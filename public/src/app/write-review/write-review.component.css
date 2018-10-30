@@ -5,6 +5,16 @@
 }
 
 .button {
-    margin: 5px 15px;
+    /* margin: 5px 15px; */
     /* display: inline-block; */
+    padding: 0px 5px;
+}
+
+.container {
+    font-family: monospace;
+    font-size: large;
+}
+
+.space {
+    margin: 5px 0px;
 }

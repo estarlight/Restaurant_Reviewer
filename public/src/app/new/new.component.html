@@ -1,6 +1,6 @@
 <div class="font">
 
-<h3>Register a restaurant</h3>
+<h3 class = "button">Register a restaurant</h3>
 
 <div class="border">
 
@@ -12,16 +12,16 @@
     <form (submit) = "createRestaurant()">
         <div class="form-group">
         <p class="button">Name:</p>
-        <input class="button form-control" type = "text" name="newRestaurant.name" [(ngModel)]="newRestaurant.name"/>
+        <input class="form-control" type = "text" name="newRestaurant.name" [(ngModel)]="newRestaurant.name"/>
         </div>
         <div class="form-group">
         <p class="button">Cuisine:</p>
-        <input class="button form-control" type = "text" name="newRestaurant.cuisine" [(ngModel)]="newRestaurant.cuisine"/>
+        <input class="form-control" type = "text" name="newRestaurant.cuisine" [(ngModel)]="newRestaurant.cuisine"/>
         </div>
-        <button class="button btn btn-primary" type="submit">Register</button> 
+        <button class="btn btn-primary" type="submit">Register</button> 
       </form>
 
-        <button class="button btn btn-secondary" (click)="goHome()">Cancel</button>  
+        <button class="btn btn-secondary" (click)="goHome()">Cancel</button>  
 
 </div>
 

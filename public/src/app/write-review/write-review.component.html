@@ -1,5 +1,5 @@
-
-<h3>Write a review for {{ restaurant.name }}</h3>
+<div class="container">
+<h3 class="button">Write a review for {{ restaurant.name }}</h3>
 
 
 <div class="border">
@@ -10,22 +10,29 @@
     </div>
 
     <form (submit) = "createReview()">
+        <div class="form-group">
         <p class="button">Your Name:</p>
-        <input class="button" type = "text" name="newReview.name" [(ngModel)]="newReview.name"/>
-        <br>
+        <input class="form-control button" type = "text" name="newReview.name" [(ngModel)]="newReview.name"/>
+        </div>
+
+        <div class="form-group">
         <p class = "button">Stars: 
-            <select name="newReview.stars" [(ngModel)]="newReview.stars">
+            <select class = "form-control" name="newReview.stars" [(ngModel)]="newReview.stars">
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
               <option value="4">4</option>
               <option value="5">5</option>
             </select></p>
+            </div>
+        <div class="form-group">
         <p class="button">Review:</p>
-        <textarea class="button" name="newReview.review" [(ngModel)]="newReview.review"></textarea>
-        <br>
-        <input class="button" type="submit" value="Submit"> 
+        <textarea class="form-control" name="newReview.review" [(ngModel)]="newReview.review"></textarea>
+        </div>
+        <input class="btn btn-primary space" type="submit" value="Submit"> 
       </form>
-        <button class="button" (click)="goHome()">Cancel</button>  
+        <button class="btn btn-secondary space" (click)="goHome()">Cancel</button>  
+
+</div>
 
 </div>
